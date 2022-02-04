@@ -1,0 +1,25 @@
+#Title: Using R to Find the Reverse Complement of Human Myostatin Gene
+#Author: 
+#Class: Bioinformatics, Spring 2022
+#Date Created: 03 February 2022
+
+#Load seqinr package
+library(seqinr)
+
+#Read FASTA file into seqinr and save as object
+hs_myo <- read.fasta(file = "",
+  
+#Set as.string = TRUE to print DNA sequence as string (otherwise, returned as single-character vectors and gets cut off at 10k bases)  
+  as.string = TRUE)
+
+#Print hs_myo to verify working code
+hs_myo
+
+#load spgs package
+library(spgs)
+
+#reverseComplement() can read vectors but ALSO objects if they are of class = "SeqFastadna"
+#Run reverseComplement on human myostatin gene
+reverseComplement(hs_myo)
+
+#Reverse complement of human myostatin gene is now successfully printed
