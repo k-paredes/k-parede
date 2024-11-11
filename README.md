@@ -1,3 +1,1 @@
-Hi! I'm Stratifyed. I am:
-  - New to coding
-  - Enjoying it
+My name's Kenneth. I am working through learning Python, R, and SQL, and I'll be uploading my projects here along the way.
